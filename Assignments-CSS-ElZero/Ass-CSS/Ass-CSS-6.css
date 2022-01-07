@@ -1,0 +1,68 @@
+/* Ass-1 */
+
+.a {
+	text-align: center;
+	padding: 50px;
+	margin: 10px;
+	border: 5px solid orange;
+}
+
+.a p {
+	padding: inherit;
+	margin: inherit;
+	border: inherit;
+	background-color: #EEE;
+	font-size: 50px;
+}
+
+/* Ass-2 */
+
+.font {
+	margin: 30px;
+	padding: 20px;
+	font-size: 50px;
+	text-align: center;
+	background-color: #EEE;
+}
+
+
+.font-1 {
+	font-style: italic;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.font-2 {
+	font-family: 'Cairo', sans-serif;
+	font-weight: 700;
+}
+
+.font-3 {
+	font-family: 'Jomhuria', cursive;
+	font-weight: 400;
+}
+
+/* Ass-3 */
+
+body {
+	font-size: 20px
+}
+
+.font2 {
+	margin: 30px;
+	padding: 20px;
+	text-align: center;
+	background-color: #EEE;
+}
+
+.font--1 {
+	font-size: 2.5rem;
+}
+
+.font--2 {
+	font-size: 2rem;
+}
+
+.font--3 {
+	font-size: 1.5rem;
+}

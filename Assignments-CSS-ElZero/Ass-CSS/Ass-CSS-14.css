@@ -1,0 +1,375 @@
+* {
+	font-family: monospace;
+	box-sizing: border-box;
+}
+
+/* Ass-1 */
+
+.ass-1 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 700px;
+    height: 400px;
+    margin: 10px auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(1, 7% 1fr);
+    gap: 15px;
+}
+
+.ass-1 .grid div {
+    background-color: #607d8b;
+    width: 100%;
+    counter-increment: num;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ass-1 .grid
+div::before {
+	content: 'Elzero '
+	counter(num)
+}
+
+/* Ass-2 */
+
+.ass-2 .layout {
+	height: 100vh;
+	background-color: #EEE;
+	color: white;
+	font-size: 20px;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: 7% auto 7%;
+	grid-template-areas: 
+	"hed hed hed hed hed hed hed"
+	"sec sec sec sec sec side side"
+	"fot fot fot fot fot fot fot";
+}
+
+.ass-2 .layout
+header {
+	background-color: #03a9f4;
+	grid-area: hed;
+	padding: 5px;
+}
+
+.ass-2 .layout
+header::before {
+	content: "Header"
+}
+
+.ass-2 .layout
+section {
+	background-color: #ff5722;
+	grid-area: sec;
+	padding: 5px;
+}
+
+.ass-2 .layout
+section::before {
+	content: "Section"
+}
+
+.ass-2 .layout
+aside {
+	background-color: #607d8b;
+	grid-area: side;
+	padding: 5px;
+}
+
+.ass-2 .layout
+aside::before {
+	content: "Aside"
+}
+
+.ass-2 .layout
+footer {
+	background-color: #009688;
+	grid-area: fot;
+	padding: 5px;
+}
+
+.ass-2 .layout
+footer::before {
+	content: "Footer"
+}
+
+/* Ass-3 */
+
+.ass-3 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 700px;
+  height: 400px;
+  margin: 10px auto;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr 1fr auto;
+  grid-template-rows: 1fr auto;
+}
+
+.ass-3 .grid
+div {
+    background-color: #403f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+/* Ass-4 */
+
+.ass-4 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 700px;
+  height: 400px;
+  margin: 10px auto;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+  "eight eight eight eight eight eight"
+  "two two two two three three"
+  "four four five five five five"
+  "six six five five five five"
+  "seven seven five five five five"
+  "one one one one one one";
+}
+
+.ass-4 .grid
+div {
+    background-color: #2196f3;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ass-4 .grid
+.eight {
+	grid-area: eight;
+}
+
+.ass-4 .grid
+.two {
+	grid-area: two;
+}
+
+.ass-4 .grid
+.three {
+	grid-area: three;
+}
+
+.ass-4 .grid
+.four {
+	grid-area: four;
+}
+
+.ass-4 .grid
+.five {
+	grid-area: five;
+}
+
+.ass-4 .grid
+.six {
+	grid-area: six;
+}
+
+.ass-4 .grid
+.seven {
+	grid-area: seven;
+}
+
+.ass-4 .grid
+.one {
+	grid-area: one;
+}
+
+/* Ass-5 */
+
+.ass-5 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 700px;
+    height: 400px;
+    margin: 10px auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-content: space-between;
+}
+
+.ass-5 .grid
+div {
+	background-color: #e91e63;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	padding: 5px;
+}
+
+/* Ass-6 */
+
+.ass-6 .page {
+	background-color: #EEE;
+	margin: 10px auto;
+	padding: 40px;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-areas: 
+	"a a b c"
+	"d e e c"
+	"d h h c"
+	"i j k l";
+}
+
+.ass-6 .page
+div {
+    padding: 20px;
+    border-bottom: 3px solid #f7825c;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25px 35px 28% auto;
+}
+
+
+
+.name {
+	font-weight: bold;
+	font-size: 15px;
+	grid-row: 1/2;
+}
+
+.skill {
+    grid-row: 2/3;
+    font-weight: 900;
+    opacity: 40%;
+    font-size: 13px;
+}
+
+.text-1 {
+	font-weight: bold;
+
+}
+
+.text-2 {
+}
+
+.Q {
+    font-family: sans-serif;
+    font-size: 45px;
+    position: absolute;
+    bottom: -22px;
+    right: 10px;
+    transform: rotate(16deg);
+    opacity: 30%;
+}
+
+.ass-6 .page
+.osama-mohamed {
+	grid-area: a;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	background-color: white;
+}
+
+.ass-6 .page
+.ahmed-sayed {
+	grid-area: b;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	background-color: white;
+	grid-template-rows: 25px 35px 28% auto;
+}
+
+.ass-6 .page
+.shady-nabil {
+	grid-area: c;
+	grid-row-start: 1;
+	grid-row-end: 7;
+	background-color: black;
+	color: white;
+	grid-template-rows: 25px 50px 18% auto;
+}
+
+.ass-6 .page
+.mohamed-ibrahim {
+	grid-area: d;
+	grid-row-start: 3;
+	grid-row-end: 7;
+	background-color: white;
+	grid-template-rows: 42px 40px 26% auto;
+}
+
+.ass-6 .page
+.mahmuod-mohamed {
+	grid-area: e;
+	grid-row-start: 3;
+	grid-row-end: 5;
+	background-color: black;
+	color: white;
+}
+
+.ass-6 .page
+.ezz-elbin {
+	grid-area: h;
+	grid-row-start: 5;
+	grid-row-end: 7;
+	background-color: white;
+}
+
+.ass-6 .page
+.mohamed-sayed {
+	grid-area: i;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	background-color: white;
+	grid-template-rows: 14% 15% 38% auto;
+}
+
+.ass-6 .page
+.ibrahim-sayed {
+	grid-area: j;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	background-color: black;
+	color: white;
+	grid-template-rows: 14% 15% 38% auto;
+}
+
+.ass-6 .page
+.gamal-sayed {
+	grid-area: k;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	background-color: white;
+	grid-template-rows: 14% 15% 38% auto;
+}
+
+.ass-6 .page
+.eman-sayed {
+	grid-area: l;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	background-color: white;
+	grid-template-rows: 14% 15% 38% auto;
+}

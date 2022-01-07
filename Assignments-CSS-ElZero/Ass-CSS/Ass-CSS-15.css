@@ -1,0 +1,130 @@
+* {
+	box-sizing: border-box;
+	font-family: monospace;
+}
+
+/* Ass-1 */
+
+.ass-1 div {
+	width: 300px;
+	height: 200px;
+	margin: 35px auto;
+	background-color: #EEE;
+	font-size: 35px;
+	font-weight: bold;
+	color: #03a9f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.ass-1
+div::after {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: #03a9f4;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    transform: rotate(7deg);
+}
+
+.ass-1
+div::before {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: #e91e63;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -2;
+    transform: rotate(-7deg);
+}
+
+/* Ass-2 */
+
+.ass-2 div {
+	width: 200px;
+	height: 200px;
+	background-color: #EEE;
+	margin: 35px auto;
+	font-size: 30px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #e91e63 #e91e63 #e91e63 #f3f3f3;
+}
+
+.ass-2
+div::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    top: -11%;
+    left: -11%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #03a9f4 #f3f3f3 #03a9f4 #03a9f4;
+}
+
+/* Ass-3 */
+
+.ass-3 div {
+	width: 200px;
+	height: 200px;
+	background-color: #EEE;
+	margin: 35px auto;
+	font-size: 30px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.ass-3
+div::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    border-style: solid;
+    border-width: 20px;
+    border-color: #03a9f4 #f3f3f3 #03a9f4 #03a9f4;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.ass-3
+div::after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #e91e63 #e91e63 #e91e63 #f3f3f3;
+    transition: 0.5s;
+}
+
+.ass-3
+div:hover:after,
+div:hover:before {
+	transform: rotate(1turn);
+}

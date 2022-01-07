@@ -1,0 +1,28 @@
+div div .title {
+	color: red;
+}
+
+div .title {
+	color: blue;
+}
+
+p,
+.title {
+	color: green;
+}
+
+.I,
+.II,
+.III,
+.IV {
+	background-color: red;
+	max-width: 400px;
+	padding: 10px;
+	margin: 10px;
+	width: fit-content;
+}
+
+.IV {
+	height: 25px;
+	overflow: hidden;
+}

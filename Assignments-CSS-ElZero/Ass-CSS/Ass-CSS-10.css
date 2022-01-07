@@ -1,0 +1,139 @@
+* {
+    font-family: arial, helvetica, sans-serif;
+}
+
+body {
+    height: 6000px;
+}
+
+/* Ass-1 */
+
+.ass-1 {
+    margin: 30px auto;
+    width: fit-content;
+}
+
+.ass-1 div {
+    width: 100px;
+    height: 100px;
+    counter-increment: num;
+    position: relative;
+    margin: 25px 30px;
+    display: inline-block;
+}
+
+.ass-1 div::before {
+    content: "Element";
+    background-color: #EEE;
+    border-radius: 50%;
+    padding: 40px 25px;
+    outline: 3px solid;
+    box-shadow: 8px 8px 0px 0px #138ff1, -8px -8px 0 0 #e91e63;
+}
+
+.ass-1 div::after {
+    content: counter(num);
+    background-color: black;
+    color: white;
+    width: 10px;
+    height: 15px;
+    padding: 3px 6px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 131%;
+    left: 39%;
+    text-align: center;
+}
+
+/* Ass-2 */
+
+.ass-2 div{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #EEE;
+    border-top-left-radius: 10px 20px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 10px 20px;
+    border-bottom-left-radius: 50%;
+    box-shadow: inset 0px 0px 15px 2px black;
+    margin: 10px auto;
+}
+
+/* Ass-3 */
+
+.ass-3 .parent {
+    width: 550px;
+    margin: 15px auto;
+    padding: 15px;
+}
+
+.ass-3 .parent .basic {
+    background-color: #EEE;
+    width: 170px;
+    height: 210px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 12%;
+}
+
+.ass-3 .parent .basic .basic-P {
+    background-color: #178deb;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    padding: 6px 50px;
+    border-radius: 5px;
+    position: relative;
+    top: 0px;
+    left: 9px;
+}
+
+.ass-3 .parent .basic .free {
+    background-color: #c3c3c3;
+    width: 65px;
+    padding: 52px 34px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 17px;
+    left: 19px;
+    font-size: 31px;
+    text-align: center;
+}
+
+.ass-3 .parent .pro {
+    background-color: #EEE;
+    width: 170px;
+    height: 210px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.ass-3 .parent .pro .pro-P {
+    background-color: #178deb;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    padding: 6px 50px;
+    border-radius: 5px;
+    position: relative;
+    top: 0px;
+    left: 9px;
+}
+
+.ass-3 .parent .pro .M30 {
+    background-color: #c3c3c3;
+    width: 65px;
+    padding: 52px 34px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 17px;
+    left: 19px;
+    font-size: 31px;
+    text-align: center;
+}

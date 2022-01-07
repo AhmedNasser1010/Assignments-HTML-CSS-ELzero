@@ -1,0 +1,28 @@
+* {
+    font-family: monospace;
+}
+
+/* Ass-1 */
+
+.ass-1
+div[class='main red'] {
+    color: red;
+}
+
+/* Ass-2 */
+
+.ass-2
+.parent:first-child div:last-child {
+    color: red;
+}
+
+/* Ass-3 */
+
+.ass-3
+.parent:nth-of-type(2) {
+    color: red;
+}
+
+/* Ass-4 */
+
+.ass-4
